@@ -28,6 +28,8 @@ export default class AkairoMessage extends Base {
 		super(client);
 
 		this.author = interaction.user;
+		
+		console.log(interaction)
 
 		this.content = `${interaction.command.type === "CHAT_INPUT" ? "/" : ""}${interaction.commandName}`;
 
